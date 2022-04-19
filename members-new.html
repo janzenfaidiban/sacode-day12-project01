@@ -79,49 +79,90 @@
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid px-4">
-                    <h1 class="mt-4">Dashboard</h1>
-                    <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item active">Dashboard</li>
-                    </ol>
-                    <div class="row">
-                        <div class="col-xl-4 col-md-6">
-                            <div class="card bg-primary text-white mb-4">
-                                <div class="card-body text-center">
-                                    <h1 class="display-1 fw-bolder">50</h1>
-                                    <span class="display-6 fw-bold">Member</span>
-                                </div>
-                                <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" href="#">View All Members</a>
-                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-6">
-                            <div class="card bg-success text-white mb-4">
-                                <div class="card-body text-center">
-                                    <h1 class="display-1 fw-bolder">35</h1>
-                                    <span class="display-6 fw-bold">News</span>
-                                </div>
-                                <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" href="#">View All News</a>
-                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-6">
-                            <div class="card bg-dark text-white mb-4">
-                                <div class="card-body text-center">
-                                    <h1 class="display-1 fw-bolder">76</h1>
-                                    <span class="display-6 fw-bold">Events</span>
-                                </div>
-                                <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" href="#">View All Events</a>
-                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                </div>
-                            </div>
-                        </div>
 
+                    <!-- Page Title -->
+                    <h1 class="mt-4">New Member</h1>
+                    <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a href="members.html">Member</a></li>
+                        <li class="breadcrumb-item active">New Member</li>
+                    </ol>
+                    <!-- End Page Title -->
+
+
+                    <!-- Main Content -->
+
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12">
+
+                            <div class="card">
+
+                                <div class="card-header">
+                                    <i class="fas fa-user-plus me-1"></i>
+                                    Form Add Member
+                                </div>
+
+                                <div class="card-body">
+
+                                    <form action="members.html">
+
+                                        <div class="form-group mb-3">
+                                            <label for="name">Name</label>
+                                            <input type="text" id="name" name="name" placeholder="Input name here"
+                                                class="form-control">
+                                        </div>
+
+                                        <div class="form-group mb-3">
+                                            <label for="place_of_birth">Place of Birth</label>
+                                            <input type="text" id="place_of_birth" name="place_of_birth"
+                                                placeholder="Input place of birth" class="form-control">
+                                        </div>
+
+                                        <div class="form-group mb-3">
+                                            <label for="place_of_birth">Date of Birth</label>
+                                            <input type="date" id="place_of_birth" name="place_of_birth"
+                                                class="form-control">
+                                        </div>
+
+                                        <div class="form-group mb-3">
+                                            <label for="gender">Gender</label>
+                                            <select class="form-select" id="gender">
+                                                <option selected></option>
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group mb-3">
+                                            <label for="email">Email</label>
+                                            <input type="email" id="email" name="email" class="form-control" required>
+                                        </div>
+
+                                        <div class="form-group mb-3">
+                                            <label for="password">Password</label>
+                                            <input type="password" id="password" name="password" class="form-control"
+                                                required>
+                                        </div>
+
+                                        <div class="form-group mb-3">
+                                            <input type="reset" value="Reset" class="btn btn-sm btn-secondary">
+
+                                            <button class="btn btn-sm btn-primary">
+                                                <i class="fas fa-save me-1"></i>
+                                                Submit
+                                            </button>
+                                        </div>
+
+                                    </form>
+
+                                </div>
+
+                            </div>
+
+                        </div>
                     </div>
+
+                    <!-- End Main Content -->
 
                 </div>
             </main>
